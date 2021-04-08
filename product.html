@@ -35,7 +35,7 @@
                 text-align: center;
             }
             .r2{
-                height: 100%;
+                height: 90%;
                 background-color: #CCC;
 
             }
@@ -81,7 +81,7 @@
             }
             .c2 {
                 display: grid;
-                grid-template-columns: repeat(4,1fr);
+                
                 grid-template-rows: 1fr 1fr 3fr;
                 grid-auto-rows: min-content;
 
@@ -105,26 +105,30 @@
                  background-color: #CCC;
                  float: right;
              }
-             .gallery-table thead {
+             .product-table thead {
                  font-size: 16px;
                  font-weight: bold;
-                 background-color: #CCC;
+                 background-color:#E6EBE0;
+
              }
-             .gallery-table {
+             .product-table {
                 display: table;
                 width: 100%
+
              }
 
-             .gallery-table td {
+             .product-table td {
                  border: 1px solid #f1f1f1;
+                 
         
              }
 
-             .gallery-table > tbody > tr > td > img {
+             .product-table > tbody > tr > td > img {
                  max-width: 150px;
 
+
              }
-             .buy-now {
+             .coffee-details {
                  padding: 7px 16px;
                  background-color:green;
                  float: right;
@@ -134,7 +138,14 @@
                  transition-duration: 0.5;
                 }
 
-             .buy-now:hover {
+             .coffee-details:hover {
+                 background-color: #9cb69c;
+             }
+             .recent-prod {
+                 max-height: 20%;
+                 max-width: 30%;
+             }
+             .table-header {
                  background-color: #9cb69c;
              }
             
@@ -160,17 +171,163 @@
             </ul>
         </div>
         <div class= "c2">
+            <table class = "product-table">
+                <thread>
+                    <tr class = "table-header">
+                        <td>
+                            
+                        </td>
+                        <td>
+                        <p style="color: #F4F1BB;">Product ID</p> 
+                        </td>
+                        <td>
+                            <p style="color: #F4F1BB;"> Price </p>
+                        </td>
+                        <td>
+                            <p style="color: #F4F1BB;"> Serving Prefs</p>
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                </thread>
+        
+                <thread>
+                    <tr>
+                        <td>
+                           <img class= "box-shadow" src="./img/image_1.jpeg">
+                        </td>
+                        <td>
+                            1001
+                        </td>
+                        <td>
+                            $5.00
+                        </td>
+                        <td>
+                            Hot
+                        </td>
+                        <td>
+                            <button class="coffee-details" >Coffee Details</button>
+                        </td>
+                    </tr>
+                </thread>
+                <thread>
+                    <tr>
+                        <td>
+                           <img class= "box-shadow" src="./img/image_2.jpeg">
+                        </td>
+                        <td>
+                            1002
+                        </td>
+                        <td>
+                            $5.00
+                        </td>
+                        <td>
+                            Hot
+                        </td>
+                        <td>
+                            <button class="coffee-details" >Coffee Details</button>
+                        </td>
+                    </tr>
+                </thread>
+                <thread>
+                    <tr>
+                        <td>
+                           <img class= "box-shadow" src="./img/image_2.jpeg">
+                        </td>
+                        <td>
+                            1003
+                        </td>
+                        <td>
+                            $4.50
+                        </td>
+                        <td>
+                            Hot
+                        </td>
+                        <td>
+                            <button class="coffee-details" >Coffee Details</button>
+                        </td>
+                    </tr>
+                </thread>
+                <thread>
+                    <tr>
+                        <td>
+                           <img class= "box-shadow" src="./img/image_3.jpeg">
+                        </td>
+                        <td>
+                            1004
+                        </td>
+                        <td>
+                            $4.50
+                        </td>
+                        <td>
+                            Hot
+                        </td>
+                        <td>
+                            <button class="coffee-details" >Coffee Details</button>
+                        </td>
+                    </tr>
+                </thread>
+                <thread>
+                    <tr>
+                        <td>
+                           <img class= "box-shadow" src="./img/image_4.jpeg">
+                        </td>
+                        <td>
+                            1005
+                        </td>
+                        <td>
+                            $4.50
+                        </td>
+                        <td>
+                            Hot
+                        </td>
+                        <td>
+                            <button class="coffee-details" >Coffee Details</button>
+                        </td>
+                    </tr>
+                </thread>
+                <thread>
+                    <tr>
+                        <td>
+                           <img class= "box-shadow" src="./img/image_5.jpeg">
+                        </td>
+                        <td>
+                            1006
+                        </td>
+                        <td>
+                            $4.00
+                        </td>
+                        <td>
+                            Hot
+                        </td>
+                        <td>
+                            <button class="coffee-details" >Coffee Details</button>
+                        </td>
+                    </tr>
+                </thread>
+                <tbody>
+                    <tr>
+
+                    </tr>
+                </tbody>
+            </table>
                      
-            <img class= "box-shadow" src="./img/image_1.jpeg">
+            <!--<img class= "box-shadow" src="./img/image_1.jpeg">
             <img class= "box-shadow" src="./img/image_2.jpeg">
             <img class= "box-shadow" src="./img/image_3.jpeg">
             <img class= "box-shadow" src="./img/image_4.jpeg">
             <img class= "box-shadow" src="./img/image_5.jpeg">
-            <img class= "box-shadow" src="./img/image_6.jpeg">
+            <img class= "box-shadow" src="./img/image_6.jpeg">-->
             
         </div>
         <div class= "c3 box-shadow">
-            <h2 class="txt-center">Recent Product</h2>
+            <div class= "recent-prod"> 
+                <h2 class="txt-center">Recent Product</h2>
+                <img class= "box-shadow" src="./img/image_2.jpeg" width="100" height="100">
+                <img class= "box-shadow" src="./img/image_3.jpeg" width="100" height="100">
+                <img class= "box-shadow" src="./img/image_4.jpeg" width="100" height="100">
+            </div>
         </div>
 
     </div>
